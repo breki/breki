@@ -36,6 +36,6 @@ rm -rf /tmp/vmware-tools-distrib/
 
 
 ### Command Line Cheatsheet
-* **cd** - moves to the home directory
-* **shutdown now** - powers off the computer (now)
-* **shutdown -r now** - restarts the computer (now)
+* ```cd``` - moves to the home directory
+* ```shutdown now``` - powers off the computer (now)
+* ```shutdown -r now``` - restarts the computer (now)
