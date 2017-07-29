@@ -35,7 +35,7 @@ rm -rf /tmp/vmware-tools-distrib/
 * [How to Remote Access to Ubuntu 16.04 from Windows](http://ubuntuhandbook.org/index.php/2016/07/remote-access-ubuntu-16-04/) - explains how to do it via VNC protocol
 * [How to use xRDP for remote access to Ubuntu 14.04](https://www.tweaking4all.com/software/linux-software/use-xrdp-remote-access-ubuntu-14-04/)
 
-#### SSH
+## SSH
 On the Linux server:
 ```
 sudo apt-get install openssh-server
@@ -43,7 +43,7 @@ sudo apt-get install openssh-server
 
 On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). You can also add a new task in ConEmu: ```"C:\Program Files\PuTTY\putty.exe" -cur_console -ssh 192.168.159.130``` (replace it with your server's IP).
 
-### Command Line Cheatsheet
+## Command Line Cheatsheet
 * ```cd``` - moves to the home directory
 * ```hostname -I``` - find the IP of the computer
 * ```shutdown now``` - powers off the computer (now)
