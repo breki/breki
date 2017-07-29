@@ -56,3 +56,4 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
 * ```shutdown now``` - powers off the computer (now)
 * ```shutdown -r now``` - restarts the computer (now)
+* ```xfce4-session-logout``` - logs out of session (XFCE4)
