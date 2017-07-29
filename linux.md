@@ -9,6 +9,7 @@
 * [Difference between the i386 download and the amd64?](https://askubuntu.com/questions/54296/difference-between-the-i386-download-and-the-amd64) - basically says AMD64 images are meant both for Intel and AMD
 * [Is the 64-Bit version of Ubuntu only compatible with AMD CPUs?](https://askubuntu.com/questions/197001/is-the-64-bit-version-of-ubuntu-only-compatible-with-amd-cpus)
 * [XUbuntu 16.04.2 64-bit image torrent link](http://torrent.ubuntu.com/xubuntu/releases/xenial/release/desktop/xubuntu-16.04.2-desktop-amd64.iso.torrent)
+* [Create a bootable USB stick on Windows](https://tutorials.ubuntu.com/tutorial/tutorial-create-a-usb-stick-on-windows#0)
 
 ## VMWare
 ### Installing VMWare Tools
