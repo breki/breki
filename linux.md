@@ -53,7 +53,13 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```apt-get update```- updates the package lists
 * ```cd``` - moves to the home directory
 * ```hostname -I``` - find the IP of the computer
+* ```kill -9 12345``` - kill process whose ID is 12345
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
+* ```pwd``` - displays the current directory ("print working directory")
 * ```shutdown now``` - powers off the computer (now)
 * ```shutdown -r now``` - restarts the computer (now)
 * ```xfce4-session-logout``` - logs out of session (XFCE4)
+
+## Keyboard Shortcuts
+### Terminal
+* ```Ctrl+U``` - clears the current line ine the terminal
