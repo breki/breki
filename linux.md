@@ -56,6 +56,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```hostname -I``` - find the IP of the computer
 * ```kill -9 12345``` - kill process whose ID is 12345
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
+* ```pm-suspend``` - put computer to sleep
 * ```pwd``` - displays the current directory ("print working directory")
 * ```shutdown now``` - powers off the computer (now)
 * ```shutdown -r now``` - restarts the computer (now)
