@@ -52,6 +52,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 ## Command Line Cheatsheet
 * ```apt-get update```- updates the package lists
 * ```cd``` - moves to the home directory
+* ```cp -a source destination``` - copies source to the destination, recursively and by keeping attributes
 * ```hostname -I``` - find the IP of the computer
 * ```kill -9 12345``` - kill process whose ID is 12345
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
