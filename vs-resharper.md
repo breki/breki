@@ -2,6 +2,9 @@
 
 ## Visual Studio
 
+#### Viewing & Editing XSD As XML
+By default, Visual Studio opens an XSD document with a visual designer. If you want to view and edit XSD simply as an XML document, use "Open with..." context menu option.
+
 ## Resharper
 
 ### Keyboard Shortcuts
