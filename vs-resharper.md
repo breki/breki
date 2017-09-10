@@ -2,6 +2,9 @@
 
 ## Visual Studio
 
+### Performance ###
+* [Speed Up Build Times By Using BitDefender Exclusions](https://ardalis.com/speed-up-visual-studio-build-times)
+
 #### Viewing & Editing XSD As XML
 By default, Visual Studio opens an XSD document with a visual designer. If you want to view and edit XSD simply as an XML document, use "Open with..." context menu option.
 
