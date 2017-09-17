@@ -54,10 +54,12 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```cd``` - moves to the home directory
 * ```cp -a source destination``` - copies source to the destination, recursively and by keeping attributes
 * ```find -name somefile``` - finds all ocurrences of ```somefile``` in the directory and subdirectories
+* ```free``` - shows memory usage
 * ```hostname -I``` - find the IP of the computer
 * ```kill -9 12345``` - kill process whose ID is 12345
 * ```ls -l``` - list files using a long listing format
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
+* ```pidof process_name``` - finds the process ID of a process
 * ```pm-suspend``` - put computer to sleep
 * ```pwd``` - displays the current directory ("print working directory")
 * ```shutdown now``` - powers off the computer (now)
