@@ -5,6 +5,7 @@
 ### Articles
 * [Robert C. Martin - The Three Laws of TDD](http://butunclebob.com/ArticleS.UncleBob.TheThreeRulesOfTdd)
 * [Robert C. Martin - TDD Harms Architecture](http://blog.cleancoder.com/uncle-bob/2017/03/03/TDD-Harms-Architecture.html)
+* [Introducing BDD](https://dannorth.net/introducing-bdd/)
 
 ### Presentations
 * [J.B. Rainsberger - Integration Tests Are A Scam](https://www.infoq.com/presentations/integration-tests-scam)
