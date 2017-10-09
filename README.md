@@ -1,17 +1,17 @@
 # Personal Knowledgebase
 
 ## Development
-- [Software Design](se-design.html)
+- [Software Design](sw-design.html)
 - [Visual Studio / Resharper](vs-resharper.html)
 
 ## Cartography, Mapping
 - [OpenStreetMap](osm.html)
 
 ## Linux
-- [Linux Installation]
-- [Linux In General]
+- [Linux Installation](linux-install.html)
+- [Linux In General](linux.html)
 
 ## Other (unsorted)
-- [Cable Management]
-- [Camping]
+- [Cable Management](cable-management.html)
+- [Camping](camping.html)
 - [Adobe Illustrator](illustrator.html)
