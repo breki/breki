@@ -1,10 +1,17 @@
-# Code Documentation Samples/Templates
+# Code Documentation Phrases
+
+## Introduction
+This page is a collection of interesting phrases used in MSDN .NET documentation that can be used to help write your own source code documentation in a more user-friendly and consistent manner. The phrases are organized into the types of code elements they describe. Interesting parts of phrases have been emphasized in bold.
 
 ## Summaries
 
 ### Interfaces
 - **Defines methods** to manipulate generic collections. - [`ICollection<T>`](https://msdn.microsoft.com/en-us/library/92t2ye13(v=vs.110).aspx)
 - **Defines a method** that a type implements to compare two objects. - [`IComparer<T>`](https://msdn.microsoft.com/en-us/library/system.collections.generic(v=vs.110).aspx)
+- **Exposes** the enumerator, which supports a simple iteration over a collection of a specified type. - [`IEnumerable<T>`](https://msdn.microsoft.com/en-us/library/9eekhta0(v=vs.110).aspx)
+- **Provides the base interface for the abstraction of** sets. - [`ISet<T>`](https://msdn.microsoft.com/en-us/library/system.collections.generic(v=vs.110).aspx)
+- **Represents** a generic collection of key/value pairs. - [`IDictionary<TKey, TValue>`](https://msdn.microsoft.com/en-us/library/s4ys34ea(v=vs.110).aspx)
+- **Supports** a simple iteration over a generic collection. - [`IEnumerator<T>`](https://msdn.microsoft.com/en-us/library/78dfe2yb(v=vs.110).aspx)
 
 ### Base Classes
 - **Provides a base class for implementations** of the `IComparer<T>` generic interface. - [`Comparer<T>`](https://msdn.microsoft.com/en-us/library/cfttsh47(v=vs.110).aspx)
