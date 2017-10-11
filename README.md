@@ -3,6 +3,7 @@
 ## Development
 - [Software Design](sw-design.html)
 - [Visual Studio / Resharper](vs-resharper.html)
+- [Code Documentation Samples](codedocs.html)
 
 ## Cartography, Mapping
 - [OpenStreetMap](osm.html)
