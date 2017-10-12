@@ -34,8 +34,12 @@ Perhaps in future this could serve as a basis for some kind of online/offline to
 ## Enumerators (Structures)
 - **Enumerates the elements of** a `Dictionary<TKey, TValue>`. - [`Dictionary<TKey, TValue>.Enumerator`](https://msdn.microsoft.com/en-us/library/k3z2hhax(v=vs.110).aspx)
 
+## Constructors
+- **Initializes a new instance of the** `List<T>` class **that is empty** and has the default initial capacity. -['List<T>.List<T>()'](https://msdn.microsoft.com/en-us/library/4kf43ys3(v=vs.110).aspx)
+- **Initializes a new instance of the** `List<T>` class **that is empty** and has **the specified** initial capacity.. -['List<T>.List<T>(Int32)'](https://msdn.microsoft.com/en-us/library/dw8e0z9z(v=vs.110).aspx)
+
 ## Methods
-- Adds an item to the `ICollection<T>` - [`IList<T>.Add(T)`](https://msdn.microsoft.com/en-us/library/63ywd54z(v=vs.110).aspx
+- Adds an item to the `ICollection<T>` - [`IList<T>.Add(T)`](https://msdn.microsoft.com/en-us/library/63ywd54z(v=vs.110).aspx)
 - **Determines the** index of **a specific item** in the `IList<T>`. - [`IList<T>.IndexOf(T)`](https://msdn.microsoft.com/en-us/library/3w0148af(v=vs.110).aspx)
 - **Determines whether** the `ICollection<T>` contains **a specific value**. - [`IList<T>.Contains(T)`](https://msdn.microsoft.com/en-us/library/k5cf1d56(v=vs.110).aspx)
 - Copies the elements of the `ICollection<T>` to an `Array`, starting at **a particular** `Array` index. - [`IList<T>.CopyTo(T[], Int32)`](https://msdn.microsoft.com/en-us/library/0efx51xw(v=vs.110).aspx)
