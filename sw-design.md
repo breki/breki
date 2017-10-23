@@ -11,6 +11,7 @@
 * [J.B. Rainsberger - Integration Tests Are A Scam](https://www.infoq.com/presentations/integration-tests-scam)
 * [J.B. Rainsberger - Integrated Tests Are A Scam](http://blog.thecodewhisperer.com/permalink/integrated-tests-are-a-scam)
 * [Steve Freeman - Test-Driven Development (that’s not what we meant)](https://vimeo.com/83960706)
+* [Steve Freeman & Nat Pryce - Building on SOLID foundations](https://youtu.be/6Bia81dI-JE)
 * [Robert C. Martin - The Three Laws of TDD](https://www.youtube.com/watch?v=qkblc5WRn-U)
 
 ### Books
