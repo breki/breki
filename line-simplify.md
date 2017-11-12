@@ -1,0 +1,5 @@
+* [Ramer–Douglas–Peucker algorithm](https://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm)
+* [Visvalingam, Whyatt: Line generalisation by repeated elimination of the smallest area](https://hydra.hull.ac.uk/assets/hull:8338/content)
+* [Jason Davies: Line Simplification](https://www.jasondavies.com/simplify/)
+* [Mike Bostock: Line Simplification](https://bost.ocks.org/mike/simplify/)
+* [Elmar de Koning: Polyline Simplification](https://www.codeproject.com/Articles/114797/Polyline-Simplification)
