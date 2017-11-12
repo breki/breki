@@ -25,3 +25,6 @@
 * Zhao-Saalfeld simplification
 * Reumann–Witkam
 * Opheim simplification
+
+------------
+[scalablemaps.com](https://scalablemaps.com/)
