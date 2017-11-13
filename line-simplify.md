@@ -17,6 +17,7 @@
 * [Elmar de Koning: Polyline Simplification](https://www.codeproject.com/Articles/114797/Polyline-Simplification) - contains description of [psimpl](http://psimpl.sourceforge.net/) that provides a variety of simplification algorithms, including the popular Douglas-Peucker approximation 
 * [Simplify.js](http://mourner.github.io/simplify-js/) - JavaScript polyline simplification library that uses a combination of Douglas-Peucker and Radial Distance algorithms
 * [AnnaMag/Line-simplification](https://github.com/AnnaMag/Line-simplification) - implementation of the Douglas-Peucker algorithm with an option of running Radial Distance prior to the DP algorithm
+* [topojson-simplify](https://github.com/topojson/topojson-simplify) - filter and simplify geometries while preserving topology for smaller files and faster rendering
 
 ### To Investigate
 * Random point routine
