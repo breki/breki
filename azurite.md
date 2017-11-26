@@ -16,6 +16,14 @@ By default, hamlets are shown at zoom level 13 (1 : 72,000) and above. To config
 </props>
 ```
 
+## Toponyms
+### Using default toponym names instead of international ones
+By default, international toponym names are used (if they exist). To make a map using the default (local) names, add `use-default-names-only` custom property:
+```xml 
+<props>
+  <use-default-names-only>True</use-default-names-only>
+</props>
+```
 
 ## Text
 ### Labels are too far from symbols
