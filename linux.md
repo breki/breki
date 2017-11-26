@@ -53,6 +53,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```apt-get update```- updates the package lists
 * ```cd``` - moves to the home directory
 * ```cp -a source destination``` - copies source to the destination, recursively and by keeping attributes
+* `cp -arv source destination``` - copies source to the destination, recursively and by keeping attributes, and it also shows what is being done
 * ```find -name somefile``` - finds all ocurrences of ```somefile``` in the directory and subdirectories
 * ```free``` - shows memory usage
 * ```hostname -I``` - find the IP of the computer
@@ -62,6 +63,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```pidof process_name``` - finds the process ID of a process
 * ```pm-suspend``` - put computer to sleep
 * ```pwd``` - displays the current directory ("print working directory")
+* ```rm -r <dir>``` - removes a directory and its contents
 * ```shutdown now``` - powers off the computer (now)
 * ```shutdown -r now``` - restarts the computer (now)
 * ```xfce4-session-logout``` - logs out of session (XFCE4)
