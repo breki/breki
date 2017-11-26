@@ -1,5 +1,22 @@
 # Azurite Mapmaking Knowledgebase
 
+## Features
+### Showing villages
+By default, villages are shown at zoom level 12 (1 : 144,000) and above. To configure at what zoom level to show villages, add `village-min-zoom` custom property:
+```xml 
+<props>
+  <village-min-zoom>13</village-min-zoom>
+</props>
+```
+### Showing hamlets
+By default, hamlets are shown at zoom level 13 (1 : 72,000) and above. To configure at what zoom level to show villages, add `hamlet-min-zoom` custom property:
+```xml 
+<props>
+  <hamlet-min-zoom>13</hamlet-min-zoom>
+</props>
+```
+
+
 ## Text
 ### Labels are too far from symbols
 ![](/azurite/img/labels-too-far-from-symbols.png?raw=true)
