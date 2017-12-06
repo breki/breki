@@ -25,6 +25,15 @@ By default, international toponym names are used (if they exist). To make a map 
 </props>
 ```
 
+### Transliterations
+#### Cyrillic to Latin
+By default, Cyrillic script is not transliterated into Latin. To enable this transliteration, add `cyrillic_to_latin` custom property:
+```xml 
+<props>
+  <cyrillic_to_latin>True</cyrillic_to_latin>
+</props>
+```
+
 ## Text
 ### Labels are too far from symbols
 ![](/azurite/img/labels-too-far-from-symbols.png?raw=true)
