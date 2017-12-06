@@ -35,6 +35,16 @@ By default, Cyrillic script is not transliterated into Latin. To enable this tra
 ```
 
 ## Text
+
+### Showing Cyrillic labels
+The default font CantoraOne used on gmap style for neighborhoods and suburbs does not support Cyrillic characters, so maps that show Cyrillic labels should switch to using a different font (like Cuprum) by setting the `suburb-neighborhood-font` custom property:
+```xml 
+<props>
+  <suburb-neighborhood-font>Cuprum</suburb-neighborhood-font>
+</props>
+```
+
+
 ### Labels are too far from symbols
 ![](/azurite/img/labels-too-far-from-symbols.png?raw=true)
 
