@@ -15,6 +15,14 @@ By default, hamlets are shown at zoom level 13 (1 : 72,000) and above. To config
   <hamlet-min-zoom>13</hamlet-min-zoom>
 </props>
 ```
+## Sea Topology
+### Troubleshooting
+There are several mechanisms for troubleshooting problems with sea topology:
+1. using `coastline` map theme to just work on coastline.
+1. using the debug mode when rendering, which renders the tiles grid, tile IDs and tile types.
+1. `SeaTileGenerator.GenerateNonEmptyTile()` method contains (commented) catch block that catches exceptions that happen when there is an error in clipping coastline polylines for a given tile. The code produces GeoJSON output for that tile which can be analyzed in GeoJSON viewer like [http://geojson.io](this one).
+1. `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file.
+1. `SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
 
 ## Toponyms
 ### Using default toponym names instead of international ones
