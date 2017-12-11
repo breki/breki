@@ -34,6 +34,15 @@ By default, international toponym names are used (if they exist). To make a map 
 ```
 
 ### Transliterations
+
+#### Non-English characters to English
+Sometimes, a map covering the English-speaking country (probably erroneously) shows a placename with non-English character (like San José in California). To convert these characters to English alphabet, use `nonenglish-to-english` custom property:
+```xml 
+<props>
+  <nonenglish-to-english>True</nonenglish-to-english>
+</props>
+```
+
 #### Cyrillic to Latin
 By default, Cyrillic script is not transliterated into Latin. To enable this transliteration, add `cyrillic_to_latin` custom property:
 ```xml 
