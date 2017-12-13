@@ -47,7 +47,7 @@ Sometimes, a map covering the English-speaking country (probably erroneously) sh
 By default, Cyrillic script is not transliterated into Latin. To enable this transliteration, add `cyrillic_to_latin` custom property:
 ```xml 
 <props>
-  <cyrillic_to_latin>True</cyrillic_to_latin>
+  <cyrillic-to-latin>True</cyrillic-to-latin>
 </props>
 ```
 
