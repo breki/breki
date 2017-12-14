@@ -44,12 +44,15 @@ Sometimes, a map covering the English-speaking country (probably erroneously) sh
 ```
 
 #### Cyrillic to Latin
-By default, Cyrillic script is not transliterated into Latin. To enable this transliteration, add `cyrillic_to_latin` custom property:
+By default, Cyrillic script is not transliterated into Latin. To enable this transliteration, add `cyrillic_to_latin` custom property with a value specifying the Cyrillics culture ID:
 ```xml 
 <props>
-  <cyrillic-to-latin>True</cyrillic-to-latin>
+  <cyrillic-to-latin>sr</cyrillic-to-latin>
 </props>
 ```
+Currently, transliteration into two Cyrillic cultures are supported:
+1. `bel` : Belarusian (using [BGN/PCGN romanization of Belarusian](https://en.wikipedia.org/wiki/BGN/PCGN_romanization_of_Belarusian))
+2. `sr`: Serbian
 
 ## Text
 
