@@ -25,13 +25,24 @@ There are several mechanisms for troubleshooting problems with sea topology:
 1. `SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
 
 ## Toponyms
-### Using default toponym names instead of international ones
-By default, international toponym names are used (if they exist). To make a map using the default (local) names, add `use-default-names-only` custom property:
+### Using different OSM tag for toponyms
+By default, `name` tag is used (if it exists, otherwise the toponym is ignored). To make a map using a different OSM tag for toponyms, use `use-specific-names-only` custom property specifying which OSM tag to use:
 ```xml 
 <props>
-  <use-default-names-only>True</use-default-names-only>
+  <use-specific-names-only>name:sr-Latn</use-specific-names-only>
 </props>
 ```
+Note that if the OSM feature does not have this tag, it will be ignored (no other tag will be used as a fallback).
+Also note that you need to recreate the Azurite map database (`-rcrdb` command line argument) when you change or add this property, since it affects which OSM tags are extracted from OSM data and saved into the database.
+
+#### Using the fallback mechanism instead
+If you specify an empty value for the property, like
+```xml 
+<props>
+  <use-specific-names-only></use-specific-names-only>
+</props>
+```
+the mapmaker will use a fallback mechanism (first the default name - `name`, then international and then the short name). This is a legacy feature and is probably not very useful, so it should be obsoleted in the future.
 
 ### Transliterations
 
