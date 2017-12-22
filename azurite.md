@@ -23,6 +23,7 @@ There are several mechanisms for troubleshooting problems with sea topology:
 1. `SeaTileGenerator.GenerateNonEmptyTile()` method contains (commented) catch block that catches exceptions that happen when there is an error in clipping coastline polylines for a given tile. The code produces GeoJSON output for that tile which can be analyzed in a [GeoJSON viewer](http://geojson.io).
 1. `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file.
 1. `SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
+1. [OSM Inspector/Views/Coastline](http://tools.geofabrik.de/osmi/?view=coastline) tool for checking if there are any errors in the OSM coastline data.
 
 ## Toponyms
 ### Using different OSM tag for toponyms
