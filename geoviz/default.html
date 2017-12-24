@@ -14,8 +14,45 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/proj4leaflet/1.0.2/proj4leaflet.js"></script>
     <link rel="stylesheet" href="map.css">
 </head>
-    <body>
-        <div id="map" class="map"></div>
-        <script src="map.js"></script>
-    </body>
+<body>
+    <div id="map" class="map"></div>
+<div class="geojson">
+    <button 
+        onclick="updateGeoJson('geojson-text')">SHOW</button>
+    <textarea id="geojson-text" class="geojson-text">
+{
+"type": "FeatureCollection",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::3857"
+        }
+    },
+    "features": [{
+        "type": "Feature",
+        "properties": {
+
+        },
+        "geometry": {
+            "type": "Polygon",
+            "coordinates": [[
+                [-625570.6, 6465993.0],
+                [-305006.9, 6696510.8],
+                [-546330.2, 6768547.6],
+                [-445478.6, 7053093.0],
+                [-279794.0, 7056694.8],
+                [-359034.5, 7337638.4],
+                [-211359.0, 7485313.8],
+                [62380.8,   6955843.3],
+                [220861.7,  6909019.4],
+                [91195.5,   6700112.6],
+                [213658.1,  6682103.4],
+                [-625570.6, 6465993.0]]]
+        }
+    }]
+}        
+</textarea>
+</div>
+    <script src="map.js"></script>
+</body>
 </html>

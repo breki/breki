@@ -7,39 +7,7 @@ var lDarkMatter = L.tileLayer(
     "https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png");
 map.addLayer(lDarkMatter);
 
-var sampleGeographic = {
-    "type": "FeatureCollection",
-    "crs": {
-        "type": "name",
-        "properties": {
-            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-        }
-    },
-    "features": [{
-        "type": "Feature",
-        "properties": {
-
-        },
-        "geometry": {
-            "type": "Polygon",
-            "coordinates": [[
-                [-5.61, 50.11],
-                [-2.73,	51.42],
-                [-4.90,	51.82],
-                [-4.00,	53.37],
-                [-2.51,	53.39],
-                [-3.22,	54.87],
-                [-1.89,	55.63],
-                [0.56,	52.85],
-                [1.98,	52.59],
-                [0.81,	51.44],
-                [1.91,	51.34],
-                [-5.61,	50.11]]]
-        }
-    }]
-};
-
-var sampleProjected = {
+var sampleGeoJson = {
     "type": "FeatureCollection",
     "crs": {
         "type": "name",
@@ -79,10 +47,16 @@ var dashedStyle = {
     dashArray: "3"
 };
 
-var layerGeographic
-    = L.geoJson(sampleGeographic, { style: dashedStyle })
-        .addTo(map);
+var layerGeoJson = L.Proj.geoJson().addTo(map);
 
-var layerProjected
-    = L.Proj.geoJson(sampleProjected)
-        .addTo(map);
+function updateGeoJson(textAreaId) {
+    var geoJsonStr = document.getElementById(textAreaId).value;
+    layerGeoJson.clearLayers();
+    addGeoJsonToLayer(geoJsonStr);
+}
+
+function addGeoJsonToLayer(geoJsonStr) {
+    return eval("layerGeoJson.addData(" + geoJsonStr + ");");
+}
+
+updateGeoJson("geojson-text");
