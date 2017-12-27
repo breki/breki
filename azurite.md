@@ -17,13 +17,43 @@ By default, hamlets are shown at zoom level 13 (1 : 72,000) and above. To config
 ```
 ## Sea Topology
 ### Troubleshooting
-There are several mechanisms for troubleshooting problems with sea topology:
-1. using `coastline` map theme to just work on coastline.
-1. using the debug mode when rendering, which renders the tiles grid, tile IDs and tile types.
-1. `SeaTileGenerator.GenerateNonEmptyTile()` method contains (commented) catch block that catches exceptions that happen when there is an error in clipping coastline polylines for a given tile. The code produces GeoJSON output for that tile which can be analyzed in a [GeoJSON viewer](http://geojson.io).
-1. `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file.
-1. `SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
-1. [OSM Inspector/Views/Coastline](http://tools.geofabrik.de/osmi/?view=coastline) tool for checking if there are any errors in the OSM coastline data.
+There are several mechanisms for troubleshooting problems with sea topology, described in the following subsections.
+
+#### Coastline theme
+A special `coastline` map theme fetches only the coastline data from OSM, so it is easier to debug.
+
+#### The Debug mode
+You can use the debug mode when rendering, which renders the complete coastline polylines, the tiles grid, tile IDs and tile types.
+
+#### Ignoring sea topology generation problems
+`SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
+
+#### Using OSM Inspector
+[OSM Inspector/Views/Coastline](http://tools.geofabrik.de/osmi/?view=coastline) tool for checking if there are any errors in the OSM coastline data.
+
+#### `seatopo.png` bitmap file
+This is an older tool for sea topology diagnostics, `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file. It is probably not as useful as rendering the SVG map in the Debug mode.
+
+#### Clipping problems with invalid coastlines
+Sometimes the OSM coastline is wrongly tagged or oriented (like islands inside land or wrongly oriented inland seas/salt lakes). This causes problems when clipping the coastline. In that case, the Mapmaker aborts the mapmaking process, reports the error (and sea tile ID) and also records the whole contents of the sea tile into a GeoJSON file which can then be visualized using a [GeoJSON viewer](http://geojson.io).
+
+There are two workaround for such problems:
+
+##### 1. Reversing the orientation of problematic OSM ways:
+You can achieve this by specifying at least one OSM way which needs reversing (all other ways that form the same coastline polyline/polygon will be automatically reversed). You specify the list of ways using the `osm/coastline-ways-to-reverse` element:
+```xml
+<osm>
+    <coastline-ways-to-reverse>545015840</coastline-ways-to-reverse>
+</osm>
+```
+
+##### 2. Ignoring the problematic OSM ways:
+You can achieve this by specifying at least one OSM way which should be ignored (all other ways that form the same coastline polyline/polygon will also be ignored automatically). You specify the list of ways using the `osm/coastline-ways-to-ignore` element:
+```xml
+<osm>
+    <coastline-ways-to-ignore>353168768,23285876</coastline-ways-to-ignore>
+</osm>
+```
 
 ## Toponyms
 ### Using different OSM tag for toponyms
