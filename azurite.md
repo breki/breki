@@ -55,6 +55,18 @@ You can achieve this by specifying at least one OSM way which should be ignored 
 </osm>
 ```
 
+#### Problems with inconsistent orientation
+When rendering the sea topology, `SeaStencil` verifies that all the polygon rings on the same level of hierarchy have the same orientation. This is just a sanity check that should pass if everything is OK with the coastline data. If the test fails, the Mapmaker aborts the mapmaking process, reports the error (and sea tile ID) and also records the whole contents of the sea tile into a GeoJSON file which can then be visualized using a [GeoJSON viewer](http://geojson.io).
+
+As a workaround for this problem, you can specify the `allow-sea-rings-with-diff-orientations` custom property and set its value to `true` to skip the orientation check:
+```xml 
+<props>
+  <allow-sea-rings-with-diff-orientations>True</allow-sea-rings-with-diff-orientations>
+</props>
+```
+
+After doing so, make sure the coastline is rendered properly.
+
 ## Toponyms
 ### Using different OSM tag for toponyms
 By default, `name` tag is used (if it exists, otherwise the toponym is ignored). To make a map using a different OSM tag for toponyms, use `use-specific-names-only` custom property specifying which OSM tag to use:
