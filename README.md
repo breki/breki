@@ -5,8 +5,14 @@
 - [Visual Studio / Resharper](vs-resharper.html)
 - [Code Documentation Samples](codedocs.html)
 
-## Cartography, Mapping
+## System Administration
+- [Website monitoring using AWS](AwsLambdaWebsiteMonitoring.html)
+- [Desired State Configuration](dsc.html)
+
+## Cartography, Geometry, Mapping
 - [OpenStreetMap](osm.html)
+- [Azurite Mapmaking Knowledgebase](azurite.html)
+- [Line Simplification Resources](line-simplify.html)
 
 ## Linux
 - [Linux Installation](linux-install.html)
