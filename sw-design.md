@@ -19,3 +19,7 @@
 ### Books
 * [Kent Beck - Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530)
 * [Steve Freeman - Growing Object-Oriented Software, Guided by Tests](http://www.growing-object-oriented-software.com/)
+
+## Performance
+### Presentations
+* [Matt Warren - Perfomance and How to Measure It](https://www.infoq.com/presentations/dot-net-performance)
