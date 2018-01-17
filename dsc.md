@@ -5,3 +5,6 @@
 - [Writing a custom DSC resource with PowerShell classes](https://docs.microsoft.com/en-us/powershell/dsc/authoringresourceclass)
 - [xWebAdministration](https://github.com/PowerShell/xWebAdministration)
 - [Central repository for DSC resources](https://github.com/PowerShell/DscResources)
+
+### Presentation
+- [Getting Started with PowerShell Desired State Configuration](https://channel9.msdn.com/Series/Getting-Started-with-PowerShell-Desired-State-Configuration-DSC/01)
