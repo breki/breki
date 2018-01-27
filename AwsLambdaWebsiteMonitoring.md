@@ -37,5 +37,10 @@ Wait for one minute and then check the status of the alarm.
 
 **To repeat the procedure for other websites, you can easily copy the existing alarm definition and just change the targeted lambda function and the name of the alarm.**
 
+## Disabling a Lambda function
+1. On the Lambda function editing page, click on the `CloudWatch Events` box to open the events editor.
+1. A list of events (or just one event called `one_minute` in this case) will be shown below. Uncheck the `Enabled` checkbox to the right of the event.
+1. `Save` the edited Lambda function. 
+
 # Resources
 - [Using AWS Lambda to check if your website is online](http://marcelog.github.io/articles/aws_lambda_check_website_http_online.html): this one describes writing the NodeJS lambda function, but I find the existing `lambda-canary` blueprint quite enough.
