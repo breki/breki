@@ -1,0 +1,1 @@
+- `git branch`: displays a list of checked out branches and which is the active branch
