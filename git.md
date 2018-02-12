@@ -1,1 +1,2 @@
 - `git branch`: displays a list of checked out branches and which is the active branch
+- `git checkout <branch>`: switches to a different branch
