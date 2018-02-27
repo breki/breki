@@ -1,4 +1,6 @@
+- `git add <file>`: add the file changes to the commit queue
 - `git branch`: displays a list of checked out branches and which is the active branch
 - `git checkout -b <branch>`: creates a new branch and switches to it
 - `git checkout <branch>`: switches to a different branch
+- `git commit -m "<message>": commits the changes, using the specified commit message
 - `git reset --hard origin/<branch_name>`: resets the branch, undoing all local changes. The `--hard` option changes all the files in your working tree to match the files in `origin/branch`
