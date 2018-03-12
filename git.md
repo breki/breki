@@ -4,5 +4,6 @@
 - `git checkout <branch>`: switches to a different branch
 - `git checkout -- *`: discard all changes in the working directory
 - `git commit -m "<message>"`: commits the changes, using the specified commit message
+- `git pull "origin" <branch>`: pulls the changes to the branch from the remote repo
 - `git push "origin" <branch>`: pushes the branch changes to the remote repo
 - `git reset --hard origin/<branch_name>`: resets the branch, undoing all local changes. The `--hard` option changes all the files in your working tree to match the files in `origin/branch`
