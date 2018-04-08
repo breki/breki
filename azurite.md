@@ -1,5 +1,22 @@
 # Azurite Mapmaking Knowledgebase
 
+## Thumbnails
+Thumbnail settings are specified by the `thumbs` tag (currently only supported for the whole template, not individual maps):
+```xml
+<thumbs style="inset-circle"/>
+  <detail>15.978653,48.099203,16.819656,48.365694</detail>
+</thumbs>
+```
+
+There are several styles of map thumbnails:
+- `inset-circle`: the default one, renders a circular zoomed-in inset on the top right of the map. 
+- `overview`: the thumbnails will be rendered without any insets.
+- `inset-diag`: thumbnail image will be split up along a diagonal line, one half having the overview map and one the zoomed-in inset one.
+- `inset-horiz`: thumbnail image will be split up along a center horizontal line, one half having the overview map and one the zoomed-in inset one.
+- `inset-vert`: thumbnail image will be split up along a center vertical line, one half having the overview map and one the zoomed-in inset one.
+
+The area covered by the inset is specified by the `detail` tag (as in the example above). If not specified, the center of the map area will be used.
+
 ## Features
 ### Showing villages
 By default, villages are shown at zoom level 12 (1 : 144,000) and above. To configure at what zoom level to show villages, add `village-min-zoom` custom property:
