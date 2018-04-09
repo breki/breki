@@ -63,6 +63,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```pidof process_name``` - finds the process ID of a process
 * ```pm-suspend``` - put computer to sleep
 * ```pwd``` - displays the current directory ("print working directory")
+* ```sudo reboot``` - reboots the machine
 * ```rm -r <dir>``` - removes a directory and its contents
 * ```shutdown now``` - powers off the computer (now)
 * ```shutdown -r now``` - restarts the computer (now)
@@ -71,3 +72,16 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 ## Keyboard Shortcuts
 ### Terminal
 * ```Ctrl+U``` - clears the current line ine the terminal
+
+## Misc
+### System Restart
+When `System Restart Required` is show, you can view the list of packages that require a restart with:
+
+```bash
+more /var/run/reboot-required.pkgs
+```
+
+To restart, do:
+```bash
+sudo reboot
+```
