@@ -6,7 +6,7 @@
 When fetching OSM entities with more than one possible value for the same tag, use `import_ways_multi` instead of `import_ways` (and corresponding methods for nodes and areas). In my experience (depending on the actual query), it means from 20 to 25% quicker query response time.
 
 ## Thumbnails
-Thumbnail settings are specified by the `thumbs` tag (currently only supported for the whole template, not individual maps):
+Thumbnail settings are specified by the `thumbs` tag, either for the template or for the individual map(s):
 ```xml
 <thumbs style="inset-circle"/>
   <detail>15.978653,48.099203,16.819656,48.365694</detail>
