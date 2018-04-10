@@ -37,6 +37,17 @@ By default, hamlets are shown at zoom level 13 (1 : 72,000) and above. To config
   <hamlet-min-zoom>13</hamlet-min-zoom>
 </props>
 ```
+
+### Administrative boundaries
+It is possible to specify which administrative boundaries' levels (`admin_level`) should be fetched from Overpass. Sometimes this is necessary because we want to skip a certain level (usually level 3) and show a lower one, which causes the boundary ways which belong both levels to not be shown on the map - this is due to the fact the algorithm remembers the highest admin level, which is then not configured to be shown on the map.
+
+To specify which levels to fetch, use 'admin-levels' custom property:
+```xml
+<props>
+  <admin-levels>2,4</admin-levels>
+</props>
+```
+
 ## Sea Topology
 ### Troubleshooting
 There are several mechanisms for troubleshooting problems with sea topology, described in the following subsections.
