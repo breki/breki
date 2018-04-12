@@ -41,7 +41,6 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="synctrayzor" />
   <package id="tortoisegit" />
   <package id="tortoisehg" />
-  <package id="tortoisesvn" />
   <package id="vcredist140" />
   <package id="vcredist2015" />
   <package id="visualstudio2017-installer" />
