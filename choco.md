@@ -35,6 +35,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="notepadplusplus" />
   <package id="notepadplusplus.install" />
   <package id="paint.net" />
+  <package id="plantuml" />
   <package id="procexp" />
   <package id="putty" />
   <package id="putty.portable" />
