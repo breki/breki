@@ -28,6 +28,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="git.install" />
   <package id="greenshot" />
   <package id="InkScape" />
+  <package id="jbs" />
   <package id="josm" />
   <package id="keepass" />
   <package id="MarkdownMonster" />
