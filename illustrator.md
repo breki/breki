@@ -18,3 +18,16 @@
 
 ## Layout
 - Use workspaces - I created my own called Map making
+
+# Scripting
+
+## Troubleshooting
+Sometimes when a new Illustrator version arrives, it doesn't properly update the scripting API and you get errors like
+
+    System.InvalidCastException: Unable to cast COM object of type 'System.__ComObject' 
+    to interface type 'Illustrator.Application'. 
+    This operation failed because the QueryInterface call on the COM component for the interface with IID
+    '{95CD20AA-AD72-11D3-B086-0010A4F5C335}' failed due to the following error: 
+    No such interface supported (Exception from HRESULT: 0x80004002 (E_NOINTERFACE)).
+    
+In this case, uninstall all versions of Illustrator, install the latest one, re-add Illustrator reference in the C# project, rebuild and try again.
