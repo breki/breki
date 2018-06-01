@@ -38,3 +38,6 @@ dotnet --version
 ```dos
 dotnet publish -r ubuntu.16.04-x64
 ```
+
+## ASP.NET Core
+- [Integration tests in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.1) - 30.05.2018
