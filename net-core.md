@@ -41,6 +41,7 @@ dotnet publish -r ubuntu.16.04-x64
 
 ## Testing
 - [Unit testing C# in .NET Core using dotnet test and xUnit](https://docs.microsoft.com/en-us/dotnet/core/testing/unit-testing-with-dotnet-test) - 29.11.2017
+- [Configuring xUnit.net with JSON](https://xunit.github.io/docs/configuring-with-json.html)
 
 ## ASP.NET Core
 - [Integration tests in ASP.NET Core](https://docs.microsoft.com/en-us/aspnet/core/test/integration-tests?view=aspnetcore-2.1) - 30.05.2018
