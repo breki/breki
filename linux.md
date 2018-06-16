@@ -58,6 +58,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```free``` - shows memory usage
 * ```hostname -I``` - find the IP of the computer
 * ```kill -9 12345``` - kill process whose ID is 12345
+* `lsb_release -a` - find the distro and version of your Ubuntu machine
 * ```ls -l``` - list files using a long listing format
 * ```netstat -an | grep "LISTEN" | grep ":3389"``` - find if any application is listening on port 3389
 * ```pidof process_name``` - finds the process ID of a process
