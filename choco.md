@@ -51,3 +51,13 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="vmware-workstation-player" />
 </packages>
 ```
+
+## Additional packages
+
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<packages>
+  <package id="authy-desktop" />
+  <package id="nomachine" />
+</packages>
+```
