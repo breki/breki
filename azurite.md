@@ -49,6 +49,8 @@ To specify which levels to fetch, use 'admin-levels' custom property:
 ```
 
 ## Sea Topology
+OSM coastline ways need to be specified so the land is on the left side and water on the right side of the way.
+
 ### Troubleshooting
 There are several mechanisms for troubleshooting problems with sea topology, described in the following subsections.
 
