@@ -58,7 +58,7 @@ There are several mechanisms for troubleshooting problems with sea topology, des
 A special `coastline` map theme fetches only the coastline data from OSM, so it is easier to debug.
 
 #### The Debug mode
-You can use the debug mode when rendering, which renders the complete coastline polylines, the tiles grid, tile IDs and tile types.
+You can use the debug mode (`-debug` command line switch) when rendering, which renders the complete coastline polylines, the tiles grid, tile IDs and tile types.
 
 #### Ignoring sea topology generation problems
 `SeaTopologyGenerator.GenerateSeaTopology()` method contains an empty catch block that just rethrows the exception. If the `throw;` is commented, the sea topology is still rendered (albeit in an incomplete way). 
@@ -89,6 +89,9 @@ You can achieve this by specifying at least one OSM way which should be ignored 
     <coastline-ways-to-ignore>353168768,23285876</coastline-ways-to-ignore>
 </osm>
 ```
+
+##### 3. Nuclear option
+The nuclear option is to disable sea topology generation altogether (this is what I had to do for a certain map that includes St. Lawrence strait since it is mapped so poorly). Currently there is no setting to do this, so I had to temporarily comment out `IndexCoastlineWaysTask`, `GenerateTempSpatialCoastlineWaysIndexTask` and `GenerateSeaTopologyTask` in `OsmImportingWorkflowFactory`. In future, we could introduce a map-level setting to do this, although I'm not sure how useful this nuclear option is in general.
 
 #### Problems with inconsistent orientation
 When rendering the sea topology, `SeaStencil` verifies that all the polygon rings on the same level of hierarchy have the same orientation. This is just a sanity check that should pass if everything is OK with the coastline data. If the test fails, the Mapmaker aborts the mapmaking process, reports the error (and sea tile ID) and also records the whole contents of the sea tile into a GeoJSON file which can then be visualized using a [GeoJSON viewer](http://geojson.io).
