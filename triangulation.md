@@ -6,3 +6,5 @@
 - [Triangle.NET](https://archive.codeplex.com/?p=triangle)
 - Steiner points
 - conforming Delaunay triangulation
+- [MIConvexHull](
+https://github.com/DesignEngrLab/MIConvexHull)
