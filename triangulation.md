@@ -8,3 +8,4 @@
 - conforming Delaunay triangulation
 - [MIConvexHull](
 https://github.com/DesignEngrLab/MIConvexHull)
+- [poly2tri](https://github.com/greenm01/poly2tri)
