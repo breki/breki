@@ -6,8 +6,11 @@
   - Holding ALT switched to zoom out
 
 ## Selection
+- V - Selection tool
 - A - Direct Selection tool
-- Shift+Ctrl+A - deselect everythinga
+- Shift+Ctrl+A - deselect everything
+- Q - Lasoo Tool - select objects by dragging around all or part of the object
+- you can use Selection and Direction tools and draw a rectangle marquee to select objects, **but make sure you are NOT drawing the rectangle above an object (like map background)**
 
 ## Measuring
 - Ctrl+R - turns on rulers
