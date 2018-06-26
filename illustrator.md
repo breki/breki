@@ -15,6 +15,9 @@
 ### Locking
 - Select objects and then press Ctrl+2 to lock them.a
 
+## Drawing
+- `N` - **Pencil Tool** for freehand drawing
+
 ## Measuring
 - Ctrl+R - turns on rulers
 - To measure object properties: switch on Document Info panel, click on its settings and select Objects. Then it will show properties of selected objects.
