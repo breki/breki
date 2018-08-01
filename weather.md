@@ -1,6 +1,9 @@
 # Weather
 
 ## Weather Stations
+- ideas:
+    - run weeWX on QNAP - can it use the USB receiver?
+
 - [weeWX - Open source software for your weather station](http://www.weewx.com/)
 
 ### Dostmann KlimaLog Pro
