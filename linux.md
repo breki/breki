@@ -53,7 +53,8 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```apt-get update```- updates the package lists
 * ```cd``` - moves to the home directory
 * ```cp -a source destination``` - copies source to the destination, recursively and by keeping attributes
-* `cp -arv source destination``` - copies source to the destination, recursively and by keeping attributes, and it also shows what is being done
+* ```cp -arv source destination``` - copies source to the destination, recursively and by keeping attributes, and it also shows what is being done
+* ```df``` - shows disk usage
 * ```find -name somefile``` - finds all ocurrences of ```somefile``` in the directory and subdirectories
 * ```free``` - shows memory usage
 * ```hostname -I``` - find the IP of the computer
