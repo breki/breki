@@ -18,6 +18,9 @@
 - Lischinski: [Incremental Delaunay Triangulation](https://www.cs.cmu.edu/afs/andrew/scs/cs/15-463/2001/pub/src/a2/lischinski/114.ps) (1994)
 - Devillers: [Improved Incremental Randomized Delaunay Triangulation](https://people.eecs.berkeley.edu/~jrs/meshpapers/Devillers.pdf) (1998)
 
+### Parallel
+- Kohout: [Parallel Incremental Delaunay Triangulation](http://old.cescg.org/CESCG-2001/JKohout/index.html)
+
 ### Other
 - Sua, Drysdale: [A comparison of sequential Delaunay triangulation algorithms](https://people.eecs.ku.edu/~s906s230/SuDrysdale.pdf) (1996)
 - Shewchuk: [Triangle: Engineering a 2D Quality Mesh Generator and Delaunay Triangulator](https://people.eecs.berkeley.edu/~jrs/papers/triangle.pdf) (1996)
