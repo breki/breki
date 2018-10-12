@@ -34,6 +34,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="keepass" />
   <package id="MarkdownMonster" />
   <package id="microsoft-build-tools" />
+  <package id="ncrunch-vs2017" />
   <package id="notepadplusplus" />
   <package id="notepadplusplus.install" />
   <package id="paint.net" />
