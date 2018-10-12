@@ -90,8 +90,13 @@ You can achieve this by specifying at least one OSM way which should be ignored 
 </osm>
 ```
 
-##### 3. Nuclear option
-The nuclear option is to disable sea topology generation altogether (this is what I had to do for a certain map that includes St. Lawrence strait since it is mapped so poorly). Currently there is no setting to do this, so I had to temporarily comment out `IndexCoastlineWaysTask`, `GenerateTempSpatialCoastlineWaysIndexTask` and `GenerateSeaTopologyTask` in `OsmImportingWorkflowFactory`. In future, we could introduce a map-level setting to do this, although I'm not sure how useful this nuclear option is in general.
+##### 3. Nuclear option: ignoring all of the coastline
+The nuclear option is to disable sea topology generation altogether (this is what I had to do for a certain map that includes St. Lawrence strait since it is mapped so poorly and for Moscow map since the data returned by Overpass somehow included OSM coastline ways 5500 km far away). This can be achieved by specifying `osm/ignore-coastline` switch:
+```xml
+<osm>
+    <ignore-coastline />
+</osm>
+```
 
 #### Problems with inconsistent orientation
 When rendering the sea topology, `SeaStencil` verifies that all the polygon rings on the same level of hierarchy have the same orientation. This is just a sanity check that should pass if everything is OK with the coastline data. If the test fails, the Mapmaker aborts the mapmaking process, reports the error (and sea tile ID) and also records the whole contents of the sea tile into a GeoJSON file which can then be visualized using a [GeoJSON viewer](http://geojson.io).
