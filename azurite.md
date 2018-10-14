@@ -48,6 +48,15 @@ To specify which levels to fetch, use 'admin-levels' custom property:
 </props>
 ```
 
+### Map Title
+You can change the size of the font for the map title (in case the map title panel is too big) by specifying `title-font-size` custom property (the default size is 100 pt):
+
+```xml 
+<props>
+  <title-font-size>50</title-font-size>
+</props>
+```
+
 ## Sea Topology
 OSM coastline ways need to be specified so the land is on the left side and water on the right side of the way.
 
