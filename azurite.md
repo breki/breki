@@ -3,7 +3,7 @@
 ## Overpass Queries
 
 ### Using "multi" (regular expressions-based) queries when possible
-When fetching OSM entities with more than one possible value for the same tag, use `import_ways_multi` instead of `import_ways` (and corresponding methods for nodes and areas). In my experience (depending on the actual query), it means from 20 to 25% quicker query response time.
+When fetching OSM entities with more than one possible value for the same tag, use `import_ways_multi` instead of `import_ways` (and corresponding methods for nodes and areas). In my experience (depending on the actual query), it means from 20% to 25% quicker query response time.
 
 ## Thumbnails
 Thumbnail settings are specified by the `thumbs` tag, either for the template or for the individual map(s):
@@ -23,6 +23,15 @@ There are several styles of map thumbnails:
 The area covered by the inset is specified by the `detail` tag (as in the example above). If not specified, the center of the map area will be used.
 
 ## Features
+
+### Showing tertiary roads
+By default, villages are shown at zoom level 11 (1 : 288,573) and above. To configure at what zoom level to show tertiary roads, add `tertiary-road-min-zoom` custom property:
+```xml 
+<props>
+  <tertiary-road-min-zoom>9</tertiary-road-min-zoom>
+</props>
+```
+
 ### Showing villages
 By default, villages are shown at zoom level 12 (1 : 144,000) and above. To configure at what zoom level to show villages, add `village-min-zoom` custom property:
 ```xml 
