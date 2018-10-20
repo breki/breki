@@ -57,6 +57,30 @@ To specify which levels to fetch, use 'admin-levels' custom property:
 </props>
 ```
 
+#### Showing maritime borders
+By default, the maritime borders are not shown. You can instruct the mapmaker to show them using the `show-maritime-borders` custom property:
+```xml
+<props>
+  <show-maritime-borders>true</show-maritime-borders>
+</props>
+```
+
+#### Overriding the name of regional (level 4) borders feature name
+For some maps (like those covering USA), you can override the name of the "regional borders" feature using the `regional-borders-feature-name` custom property, like:
+```xml
+<props>
+  <regional-borders-feature-name>state borders</regional-borders-feature-name>
+</props>
+```
+
+#### Showing US county borders
+`show-us-counties` custom property is (probably temporary) way to switch showing level 6 administrative boundaries (and naming the feature "county borders"):
+```xml
+<props>
+  <show-us-counties>true</show-us-counties>
+</props>
+```
+
 ### Map Title
 You can change the size of the font for the map title (in case the map title panel is too big) by specifying `title-font-size` custom property (the default size is 100 pt):
 
