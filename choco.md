@@ -20,6 +20,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="chocolatey" />
   <package id="chocolatey-core.extension" />
   <package id="chocolatey-windowsupdate.extension" />
+  <package id="cmder" />
   <package id="dotnet4.7.1" />
   <package id="dotnetcore-sdk" />
   <package id="dropbox" />
