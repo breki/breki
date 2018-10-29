@@ -60,6 +60,7 @@ You can install all these packages in a batch by saving the contents to a `packa
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package id="authy-desktop" />
+  <package id="intellijidea-community" />
   <package id="nomachine" />
 </packages>
 ```
