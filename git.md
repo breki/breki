@@ -1,5 +1,5 @@
 - `git add <file>`: add the file changes to the commit queue
-- `git add -all`: adds all the changed files (removed, too) to the commit queue
+- `git add --all`: adds all the changed files (removed, too) to the commit queue
 - `git branch`: displays a list of checked out branches and which is the active branch
 - `git branch -d <branch>`: deletes a local branch
 - `git checkout -b <branch>`: creates a new branch and switches to it
