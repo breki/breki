@@ -51,6 +51,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="visualstudio2017-installer" />
   <package id="visualstudio2017buildtools" />
   <package id="vmware-workstation-player" />
+  <package id="windirstat" />
 </packages>
 ```
 
