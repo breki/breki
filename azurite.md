@@ -112,7 +112,7 @@ You can use the debug mode (`-debug` command line switch) when rendering, which 
 This is an older tool for sea topology diagnostics, `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file. It is probably not as useful as rendering the SVG map in the Debug mode.
 
 #### Clipping problems with invalid coastlines
-Sometimes the OSM coastline is wrongly tagged or oriented (like islands inside land or wrongly oriented inland seas/salt lakes). This causes problems when clipping the coastline. In that case, the Mapmaker aborts the mapmaking process, reports the error (and sea tile ID) and also records the whole contents of the sea tile into a GeoJSON file which can then be visualized using a [GeoJSON viewer](http://geojson.io).
+Sometimes the OSM coastline is wrongly tagged or oriented (like islands inside land or wrongly oriented inland seas/salt lakes). This causes problems when clipping the coastline. In that case, the Mapmaker records the whole contents of each invalid sea tile into a GeoJSON file and aborts the mapmaking process. GeoJSON files can then be visualized using a [GeoJSON viewer](http://geojson.io).
 
 There are two workaround for such problems:
 
