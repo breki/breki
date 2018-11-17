@@ -57,6 +57,7 @@ On the Windows client, install [Putty](https://www.chiark.greenend.org.uk/~sgtat
 * ```df``` - shows disk usage
 * ```find -name somefile``` - finds all ocurrences of ```somefile``` in the directory and subdirectories
 * ```free``` - shows memory usage
+    * ```free -hw -c 10 -s 5` - shows memory usage in human-readable form, every 5 seconds for 10 times
 * ```hostname -I``` - find the IP of the computer
 * ```kill -9 12345``` - kill process whose ID is 12345
 * `lsb_release -a` - find the distro and version of your Ubuntu machine
