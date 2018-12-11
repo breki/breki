@@ -28,6 +28,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="foobar2000" />
   <package id="git" />
   <package id="git.install" />
+  <package id="googlechrome" />
   <package id="greenshot" />
   <package id="InkScape" />
   <package id="jbs" />
