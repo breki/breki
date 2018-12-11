@@ -6,7 +6,7 @@
 
 ## Chocolatey package file
 
-You can install all these packages in a batch by saving the contents to a `packages.config` file and then running `cinst package.config -y`
+You can install all these packages in a batch by saving the contents to a `packages.config` file and then running `cinst packages.config -y` (make sure the file is named `packages.config`, otherwise it won't work).
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
