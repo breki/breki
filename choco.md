@@ -64,6 +64,8 @@ You can install all these packages in a batch by saving the contents to a `packa
 <packages>
   <package id="authy-desktop" />
   <package id="intellijidea-community" />
+  <package id="maven" />
   <package id="nomachine" />
+  <package id="postgresql" />
 </packages>
 ```
