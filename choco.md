@@ -21,7 +21,6 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="chocolatey-core.extension" />
   <package id="chocolatey-windowsupdate.extension" />
   <package id="cmder" />
-  <package id="dotnet4.7.1" />
   <package id="dotnetcore-sdk" />
   <package id="dropbox" />
   <package id="filezilla" />
@@ -36,6 +35,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="keepass" />
   <package id="MarkdownMonster" />
   <package id="microsoft-build-tools" />
+  <package id="netfx-4.7.2-devpack" />
   <package id="ncrunch-vs2017" />
   <package id="notepadplusplus" />
   <package id="notepadplusplus.install" />
