@@ -69,6 +69,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="intellijidea-community" />
   <package id="maven" />
   <package id="nomachine" />
+  <package id="pgadmin4" />
   <package id="postgresql" />
 </packages>
 ```
