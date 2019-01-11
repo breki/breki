@@ -13,6 +13,7 @@ You can install all these packages in a batch by saving the contents to a `packa
 <packages>
   <package id="7zip" />
   <package id="7zip.install" />
+  <package id="adobereader" />
   <package id="audioswitcher" />
   <package id="autohotkey" />
   <package id="autohotkey.install" />
