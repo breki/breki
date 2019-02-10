@@ -16,6 +16,7 @@
 * [Steve Freeman & Nat Pryce - Building on SOLID foundations](https://youtu.be/6Bia81dI-JE)
 * [Robert C. Martin - The Three Laws of TDD](https://www.youtube.com/watch?v=qkblc5WRn-U)
 * [Ian Cooper - TDD, Where Did It All Go Wrong](https://www.youtube.com/watch?v=EZ05e7EMOLM&t=839s)
+* [Steve Smith - The Death of Continuous Integration](https://www.infoq.com/presentations/death-continuous-integration)
 
 ### Books
 * [Kent Beck - Test Driven Development by Example](https://www.amazon.com/Test-Driven-Development-Kent-Beck/dp/0321146530)
