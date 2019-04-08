@@ -1,9 +1,12 @@
 # Adobe Illustrator plugins development tips and tricks
 
+## Requirements
+-`Build Windows desktop applications using the Microsoft C++ toolset, ATL, or MFC.` feature (in VS 2017).
+- VC++ MFC support installed for Visual Studio.
+- Windows SDK (currently 10)
+- Resharper for C++
+
 ## Tips and tricks
-- you need `Build Windows desktop applications using the Microsoft C++ toolset, ATL, or MFC.` feature (in VS 2017).
-- you need to have VC++ MFC support installed for Visual Studio.
-- also install Resharper for C++
 - make sure you build 64-bit executables, otherwise you will get `Error loading plugins` error message in Illustrator.
 
 ## Useful resources 
