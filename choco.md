@@ -3,6 +3,7 @@
 ## Usages
 - `clist -l --idonly` - lists all local packages (just the names, useful to make the list in the section below)
 - `cup all -y` - updates all local packages
+- `choco pin add --name=nodejs --version=11.13.0` - pins a package to a specific version (so it does not get updated to a higher one)
 
 ## Chocolatey package file
 
