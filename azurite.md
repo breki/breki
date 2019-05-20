@@ -112,9 +112,16 @@ You can use the debug mode (`-debug` command line switch) when rendering, which 
 This is an older tool for sea topology diagnostics, `SeaTopologyResolver.ResolveLevel()` method catches exceptions and renders the topology into a `seatopo.png` bitmap file. It is probably not as useful as rendering the SVG map in the Debug mode.
 
 #### Clipping problems with invalid coastlines
-Sometimes the OSM coastline is wrongly tagged or oriented (like islands inside land or wrongly oriented inland seas/salt lakes). This causes problems when clipping the coastline. In that case, the Mapmaker records the whole contents of each invalid sea tile into a GeoJSON file and aborts the mapmaking process. GeoJSON files can then be visualized using a [GeoJSON viewer](http://geojson.io).
+Sometimes the OSM coastline is wrongly tagged or oriented (like islands inside land or wrongly oriented inland seas/salt lakes). This causes problems when clipping the coastline. In that case, the Mapmaker records the whole contents of each invalid sea tile into GeoJSON files and aborts the mapmaking process. GeoJSON files can then be visualized using a [GeoJSON viewer](http://geojson.io). 
 
-There are two workaround for such problems:
+Note that Mapmaker generates multiple versions of the GeoJSON file, with increasing level of simplification, to enable viewing of areas with big coastline dataset. Also, the coastline polygons are colored to indicate the orientation of the polygon:
+1. green means the coastline is oriented correctly (land on the left, sea on the right).
+2. red means the coastline orientation is reversed.
+3. gray means it is not possible to determine the orientation (usually this means the polygon is degenerate).
+
+Right now the orientation indicated does not always correspond to the original OSM data orientation - I need to investigate why.
+
+There are several workarounds for problems with orientation:
 
 ##### 1. Reversing the orientation of problematic OSM ways:
 You can achieve this by specifying at least one OSM way which needs reversing (all other ways that form the same coastline polyline/polygon will be automatically reversed). You specify the list of ways using the `osm/coastline-ways-to-reverse` element:
