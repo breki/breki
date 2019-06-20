@@ -8,6 +8,14 @@
 #### Viewing & Editing XSD As XML
 By default, Visual Studio opens an XSD document with a visual designer. If you want to view and edit XSD simply as an XML document, use "Open with..." context menu option.
 
+### Extensions Used
+- [Color Theme Editor](https://marketplace.visualstudio.com/items?itemName=VisualStudioPlatformTeam.VisualStudio2017ColorThemeEditor)
+- [Editor Guidelines](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)
+- [GhostDoc Community](https://submain.com/products/ghostdoc.aspx)
+- [HgSccPackage](https://bitbucket.org/zzsergant/hgsccpackage/wiki/Home)
+- [Layouts O Rama](http://www.type5dev.com/LayoutsORama)
+- [WakaTime](https://github.com/wakatime/visualstudio-wakatime)
+
 ## Resharper
 
 ### Keyboard Shortcuts
