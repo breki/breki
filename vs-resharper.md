@@ -14,6 +14,9 @@ By default, Visual Studio opens an XSD document with a visual designer. If you w
 - [GhostDoc Community](https://submain.com/products/ghostdoc.aspx)
 - [HgSccPackage](https://bitbucket.org/zzsergant/hgsccpackage/wiki/Home)
 - [Layouts O Rama](http://www.type5dev.com/LayoutsORama)
+- [NCrunch](https://www.ncrunch.net/)
+- [ReSharper](https://www.jetbrains.com/resharper/)
+- [Theme Switcher](https://github.com/frankschierle/ThemeSwitcher)
 - [WakaTime](https://github.com/wakatime/visualstudio-wakatime)
 
 ## Resharper
