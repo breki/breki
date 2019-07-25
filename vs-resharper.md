@@ -30,6 +30,9 @@ By default, Visual Studio opens an XSD document with a visual designer. If you w
 #### Re-enabling "Go To File Member" Shortcut
 For some reason, new versions of R# (year 2017) no longer have the `Alt+\` (Go to file member) shortcut. To re-enable it, go to VS keyboard customization dialog and add `ReSharper.ReSharper_GotoFileMember` shortcut.
 
+### Settings to make sure you have
+- `Code Editing / C# / Formatting Style / Line Breaks and Wrapping / Keep existing line breaks` should be unchecked
+
 ### Troubleshooting
 #### Solution-Wide Analysis
 Sometimes (when moving projects, for example), R# Solution-Wide Analysis does not detect the newly moved projects and reports missing references. Solution: unload and reload the project in Visual Studio.
