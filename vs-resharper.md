@@ -32,6 +32,7 @@ For some reason, new versions of R# (year 2017) no longer have the `Alt+\` (Go t
 
 ### Settings to make sure you have
 - `Code Editing / C# / Formatting Style / Line Breaks and Wrapping / Keep existing line breaks` should be unchecked
+- `Code Editing / C# / Formatting Style / Line Breaks and Wrapping / Hard wrap at` should be set to `80`
 
 ### Troubleshooting
 #### Solution-Wide Analysis
