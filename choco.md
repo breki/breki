@@ -57,6 +57,9 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="visualstudio2017-workload-netcoretools" />
   <package id="visualstudio2017-workload-netweb" />
   <package id="visualstudio2017-workload-node" />
+  <package id="visualstudio2019community" />
+  <package id="visualstudio2019-workload-manageddesktop" />
+  <package id="visualstudio2019-workload-netweb" />
   <package id="vmware-workstation-player" />
   <package id="windirstat" />
 </packages>
