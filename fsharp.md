@@ -1,5 +1,8 @@
 ﻿# F# Cheatsheet
 
+## Resources
+- [Choosing between collection functions](https://fsharpforfunandprofit.com/posts/list-module-functions/)
+
 ## Types
 
 ### Arrays
@@ -38,7 +41,10 @@ let usedRobotNames: Set<string> = Set.empty
 ```fsharp
 let allChars = [ 'a' .. 'z' ] |> Set
 ```
-
+#### Size of the set
+```fsharp
+Set.count usedChars
+```
 #### Set contains
 ```fsharp
 Set.contains candidateName usedRobotNames
