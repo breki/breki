@@ -17,6 +17,12 @@ let alpha = [| 'A' ; 'Z' |]
 let results = [| for i in 1 .. 64 -> square i |]
 ```
 
+#### 2D arrays as class members
+```fsharp
+type DemData(width, height) =
+    member this.Cells = Array2D.create width height NoHeight
+```
+
 #### Access array elements by index
 ```fsharp
 alpha.[index]
@@ -68,6 +74,12 @@ let usedChars = Set.ofSeq input
     |> Set.map (Char.ToLower)
 ```
 
+### Type aliases
+#### Used for functions
+```fsharp
+type FetchSrtmTiles = SrtmTileCoords seq -> SrtmTileHgtFile seq
+```
+
 ### Tuples
 - [F# for fun and profit: Tuples](https://fsharpforfunandprofit.com/posts/tuples/)
 
@@ -97,7 +109,7 @@ let bounds = {
 
 #### Empty record
 ```fsharp
-type NoHeight = unit
+type NoHeight = NoHeight of unit
 ```
 
 ### Single-case union types
@@ -126,6 +138,9 @@ match radius with
     | _ -> 10
 ```
 
-
+## FSUnit
 ```fsharp
+|> should equal "N10W001"
+stream |> should not' (equal None)
+demData |> should be ofExactType<DemData>
 ```
