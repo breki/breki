@@ -68,6 +68,47 @@ let usedChars = Set.ofSeq input
     |> Set.map (Char.ToLower)
 ```
 
+### Tuples
+- [F# for fun and profit: Tuples](https://fsharpforfunandprofit.com/posts/tuples/)
+
+```fsharp
+type SrtmTileHgtFile = SrtmTileCoords * string
+```
+
+### Records
+- [F# for fun and profit: Records](https://fsharpforfunandprofit.com/posts/records/)
+
+```fsharp
+type Bounds = { 
+    MinLon: double
+    MinLat: double 
+    MaxLon: double 
+    MaxLat: double
+    }
+```
+
+#### Creating records
+```fsharp
+let bounds = { 
+    MinLon = 10.1; MinLat = 20.1; 
+    MaxLon = 10.2; MaxLat = 20.2
+}
+```
+
+#### Empty record
+```fsharp
+type NoHeight = unit
+```
+
+### Single-case union types
+```fsharp
+type SrtmTileHgtFile = SrtmTileHgtFile of SrtmTileCoords * string
+```
+#### Creating
+```fsharp
+SrtmTileHgtFile (tileCoords, Path.Combine(localCacheDir, tileHgtFileName))
+```
+
 ### Classes
 ```fsharp
 type Robot (name: string) =
