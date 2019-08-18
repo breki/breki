@@ -1,7 +1,10 @@
 ﻿# F# Cheatsheet
 
 ## Resources
+### Articles
 - [Choosing between collection functions](https://fsharpforfunandprofit.com/posts/list-module-functions/)
+### Videos
+- [Mark Seemann: Look, No Mocks! Functional TDD with F#](https://www.infoq.com/presentations/mock-fsharp-tdd/)
 
 ## Types
 
