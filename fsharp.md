@@ -141,9 +141,29 @@ match radius with
     | _ -> 10
 ```
 
-## FSUnit
+## Unit testing
+
+### xUnit
+#### Defining test fixture class and constructor
+```fsharp
+type ``PNG filtering property tests``() = 
+    do 
+        Arb.register<ScanlinesGenerator>() |> ignore
+```
+
+### FSUnit
 ```fsharp
 |> should equal "N10W001"
 stream |> should not' (equal None)
 demData |> should be ofExactType<DemData>
 ```
+
+### FSCheck
+#### Registering generators inside test fixture contructor
+```fsharp
+type ``PNG filtering property tests``() = 
+    do 
+        Arb.register<ScanlinesGenerator>() |> ignore
+
+```
+
