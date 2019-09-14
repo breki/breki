@@ -2,7 +2,7 @@
 
 ## Visual Studio
 
-### Performance ###
+### Performance
 * [Speed Up Build Times By Using BitDefender Exclusions](https://ardalis.com/speed-up-visual-studio-build-times)
 
 #### Viewing & Editing XSD As XML
@@ -39,3 +39,5 @@ For some reason, new versions of R# (year 2017) no longer have the `Alt+\` (Go t
 #### Solution-Wide Analysis
 Sometimes (when moving projects, for example), R# Solution-Wide Analysis does not detect the newly moved projects and reports missing references. Solution: unload and reload the project in Visual Studio.
 
+#### xUnit tests not being recognized
+First of all, you need `xunit.runner.visualstudio` NuGet package installed in your test project. If this still doesn't help, clear Resharper cache and restart Visual Studio.

@@ -1,4 +1,4 @@
-﻿# F# Cheatsheet
+# F# Cheatsheet
 
 ## Resources
 ### Articles
