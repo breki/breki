@@ -1,3 +1,5 @@
+## Common commands
+
 - `git add <file>`: add the file changes to the commit queue
 - `git add --all`: adds all the changed files (removed, too) to the commit queue
 - `git branch`: displays a list of checked out branches and which is the active branch
@@ -14,3 +16,10 @@
 - `git reset --hard origin/<branch_name>`: resets the branch, undoing all local changes. The `--hard` option changes all the files in your working tree to match the files in `origin/branch`
 - `git rm <file name>`: removes the file
 - `git status`: displays the working tree status
+
+## Configuring git
+
+### Associating Notepad++ with Git
+```
+git config --global core.editor "'C:/Program Files/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+```
