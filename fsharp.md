@@ -158,6 +158,15 @@ stream |> should not' (equal None)
 demData |> should be ofExactType<DemData>
 ```
 
+### Unquote
+#### Asserting exceptions
+```fsharp
+    raises<InvalidOperationException> 
+        <@ 
+            decodeSrtmTileFromPngFile FileSys.openFileToRead pngFileName 
+        @>
+```
+
 ### FSCheck
 #### Registering generators inside test fixture contructor
 ```fsharp
