@@ -16,6 +16,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="7zip.install" />
   <package id="adobereader" />
   <package id="audioswitcher" />
+  <package id="authy-desktop" />
   <package id="autohotkey" />
   <package id="autohotkey.install" />
   <package id="boxcryptor" />
@@ -39,6 +40,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="jbs" />
   <package id="josm" />
   <package id="keepass" />
+  <package id="libreoffice" />
   <package id="MarkdownMonster" />
   <package id="microsoft-build-tools" />
   <package id="netfx-4.7.2-devpack" />
@@ -51,6 +53,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="procexp" />
   <package id="putty" />
   <package id="putty.portable" />
+  <package id="resharper-platform" />
   <package id="synctrayzor" />
   <package id="tortoisegit" />
   <package id="tortoisehg" />
@@ -70,7 +73,6 @@ You can install all these packages in a batch by saving the contents to a `packa
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
-  <package id="authy-desktop" />
   <package id="coretemp" />
   <package id="exercism-io-cli" />
   <package id="firefox" />
@@ -81,8 +83,10 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="postman" />
   <package id="pgadmin4" />
   <package id="postgresql" />
+  <package id="procexp" />
   <package id="qgis" />
   <package id="tightvnc" />
+  <package id="vlc" />
   <package id="windows-sdk-10.1" />
 </packages>
 ```
