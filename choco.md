@@ -23,13 +23,17 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="chocolatey-core.extension" />
   <package id="chocolatey-windowsupdate.extension" />
   <package id="cmder" />
+  <package id="dotnet4.7.2" />
   <package id="dotnetcore-sdk" />
+  <package id="dotnetfx" />
   <package id="dropbox" />
   <package id="filezilla" />
   <package id="foobar2000" />
   <package id="git" />
   <package id="git.install" />
+  <package id="gnucash" />
   <package id="googlechrome" />
+  <package id="googledrive" />
   <package id="greenshot" />
   <package id="InkScape" />
   <package id="jbs" />
@@ -38,7 +42,8 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="MarkdownMonster" />
   <package id="microsoft-build-tools" />
   <package id="netfx-4.7.2-devpack" />
-  <package id="ncrunch-vs2017" />
+  <package id="ncrunch-vs2019" />
+  <package id="nodejs" />
   <package id="notepadplusplus" />
   <package id="notepadplusplus.install" />
   <package id="paint.net" />
@@ -51,12 +56,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="tortoisehg" />
   <package id="vcredist140" />
   <package id="vcredist2015" />
-  <package id="visualstudio2017-installer" />
-  <package id="visualstudio2017buildtools" />
-  <package id="visualstudio2017community" />
-  <package id="visualstudio2017-workload-netcoretools" />
-  <package id="visualstudio2017-workload-netweb" />
-  <package id="visualstudio2017-workload-node" />
+  <package id="visualstudio-installer" />
   <package id="visualstudio2019community" />
   <package id="visualstudio2019-workload-manageddesktop" />
   <package id="visualstudio2019-workload-netweb" />
@@ -71,11 +71,18 @@ You can install all these packages in a batch by saving the contents to a `packa
 <?xml version="1.0" encoding="utf-8"?>
 <packages>
   <package id="authy-desktop" />
-  <package id="intellijidea-community" />
-  <package id="maven" />
+  <package id="coretemp" />
+  <package id="exercism-io-cli" />
+  <package id="firefox" />
+  <package id="garmin-express" />
+  <package id="graphviz" />
+  <package id="hxd" />
   <package id="nomachine" />
   <package id="postman" />
   <package id="pgadmin4" />
   <package id="postgresql" />
+  <package id="qgis" />
+  <package id="tightvnc" />
+  <package id="windows-sdk-10.1" />
 </packages>
 ```
