@@ -9,6 +9,7 @@
 - `git checkout <file name>`: reverts the file to HEAD, overwriting your change
 - `git checkout -- *`: discard all changes in the working directory
 - `git commit -m "<message>"`: commits the changes, using the specified commit message
+- `git config --list --show-origin`: list all Git configuration settings and to which configuration they belong (global, system, local, worktree)
 - `git diff >a.patch`: saves the current changes to a patch file called `a.patch`
 - `git merge <branch>`: merges changes from a different branch
 - `git pull "origin" <branch>`: pulls the changes to the branch from the remote repo
