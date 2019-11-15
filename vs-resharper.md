@@ -41,3 +41,11 @@ Sometimes (when moving projects, for example), R# Solution-Wide Analysis does no
 
 #### xUnit tests not being recognized
 First of all, you need `xunit.runner.visualstudio` NuGet package installed in your test project. If this still doesn't help, clear Resharper cache and restart Visual Studio.
+
+## Keyboard shortcuts I'm using in VS/R#
+This is a growing list of keyboard shortcuts I'm using. The idea is to then try to map these to Rider/VS Code/IntelliJ
+
+- `Ctrl+Shift+B` - build solution
+- `Shift+Alt+B` - rebuild solution
+- `Shift+Alt+PgDn`/`Shift+Alt+PgUp` - next/previous error in solution
+- `F8`/`Shift+F8` - next/previous build error
