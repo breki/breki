@@ -79,6 +79,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="garmin-express" />
   <package id="graphviz" />
   <package id="hxd" />
+  <package id="jetbrains-rider" />
   <package id="nomachine" />
   <package id="postman" />
   <package id="pgadmin4" />
