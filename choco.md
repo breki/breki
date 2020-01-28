@@ -44,6 +44,7 @@ You can install all these packages in a batch by saving the contents to a `packa
   <package id="MarkdownMonster" />
   <package id="microsoft-build-tools" />
   <package id="netfx-4.7.2-devpack" />
+  <package id="netfx-4.8-devpack" />
   <package id="ncrunch-vs2019" />
   <package id="nodejs" />
   <package id="notepadplusplus" />
